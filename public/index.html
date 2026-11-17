@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Secret Santa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#/families"><span class="brand-mark" aria-hidden="true">&#10052;</span> Secret Santa</a>
+      <nav id="nav" class="nav" hidden>
+        <a href="#/families" data-route="families">My Families</a>
+        <a href="#/profile" data-route="profile">My Present Profile</a>
+        <span id="nav-user" class="nav-user"></span>
+        <button id="logout-btn" class="btn btn-ghost btn-sm" type="button">Logout</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app" class="container" aria-live="polite"></main>
+
+  <div id="modal-root" class="modal-backdrop" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" type="button" aria-label="Close" data-close>&times;</button>
+      <h2 id="modal-title"></h2>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" hidden></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
